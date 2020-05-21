@@ -1,19 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Page Title</title>
-  <meta charset="UTF-8"/>
-  <link href="style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-	<div class="card">
-		
-		<div class="container">
-			<H1>Survey</H1>
-		<div>
-	</div>
-</body>
-
-
+   <head>
+      <title>UI Evaluation</title>
+      <meta charset="UTF-8"/>
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <div class="form_card">
+         <div class="form_container">
+            <H1>Survey</H1>
+            <hr>
+            <form>
+               <h3> Visit the <a href="https://apple.com/ca/">Apple</a> website and fill out your thoughts below.</h3>
+               <br>
+               <a href="https://apple.com/ca/">
+               <img src="apple.png" alt="https://apple.com/ca/" width="550" height="300">
+               </a>
+               <br>
+               <div class="outer_question">
+                  <h3>How would you say the content on the screen is organized?</h3>
+                  <div>	
+                     <input type="radio" id="organized" name="organization" value="organized">
+                     <label for="male">Organized really well</label><br>
+                     <input type="radio" id="alright" name="organization" value="alright">
+                     <label for="female">A bit confusing but usuable</label><br>
+                     <input type="radio" id="confusing" name="organization" value="confusing">
+                     <label for="other"> Super confusing</label>
+                  </div>
+               </div>
+               <div class="outer_question">
+                  <h3>What was your impression on the support page layout?</h3>
+                  <div>
+                     <select>
+                        <option >Great</option>
+                        <option >Good</option>
+                        <option >Could be better</option>
+                        <option >Terrible</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="outer_question">
+                  <h3>What was the best/worst thing about the sign in page</h3>
+                  <div>
+                     <textarea rows="1" ></textarea>
+                  </div>
+               </div>
+               <div class="outer_question">
+                  <h3>How would you change the iPhone page?</h3>
+                  <div>
+                     <input type="checkbox" > Add larger Icons<br>
+                     <input type="checkbox" > Change the background to a lighter colour<br>
+                     <input type="checkbox" > Add information of phones to top of page <br>
+                     <input type="checkbox" > Reduce information towards bottom of page  <br>
+                     <input type="checkbox" > It's fine as is
+                  </div>
+               </div>
+               <div class="outer_question">
+                  <h3>Select one of the options for each of the questions below</h3>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th class="table-col"></th>
+                           <th>Strongly Disagree</th>
+                           <th>Disagree</th>
+                           <th>Neutral</th>
+                           <th>Agree</th>
+                           <th>Strongly Agree</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td class="table-col">The colours are visually appeasing</td>
+                           <td><input type="radio" value="None" name="colour" required/></td>
+                           <td><input type="radio" value="None" name="colour" required/></td>
+                           <td><input type="radio" value="None" name="colour" required/></td>
+                           <td><input type="radio" value="None" name="colour" required/></td>
+                           <td><input type="radio" value="None" name="colour" required/></td>
+                        </tr>
+                        <tr>
+                           <td class="table-col">It is fairly easy to sign in</td>
+                           <td><input type="radio" value="None" name="signin" required/></td>
+                           <td><input type="radio" value="None" name="signin" required/></td>
+                           <td><input type="radio" value="None" name="signin" required/></td>
+                           <td><input type="radio" value="None" name="signin" required/></td>
+                           <td><input type="radio" value="None" name="signin" required/></td>
+                        </tr>
+                        <tr>
+                           <td class="table-col">There were no issues searching for support on an item</td>
+                           <td><input type="radio" value="None" name="support" required/></td>
+                           <td><input type="radio" value="None" name="support" required/></td>
+                           <td><input type="radio" value="None" name="support" required/></td>
+                           <td><input type="radio" value="None" name="support" required/></td>
+                           <td><input type="radio" value="None" name="support" required/></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="outer_question">
+                  <h3>Additional Comments?</h3>
+                  <div>
+                     <textarea rows="1" ></textarea>
+                  </div>
+               </div>
+               <br>
+               <br>
+               <button class="submit_button">Submit</button>
+               <br>
+               <br>
+            </form>
+         </div>
+      </div>
+      <br>
+      <br>
+      <footer>
+         <p>Website designed by Aman<br>
+      </footer>
+   </body>
 </html>

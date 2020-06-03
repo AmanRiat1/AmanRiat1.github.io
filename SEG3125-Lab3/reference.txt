@@ -1,0 +1,17 @@
+https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
+https://stackoverflow.com/questions/36568572/flexbox-vertically-split-container-in-half
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+https://stackoverflow.com/questions/2735881/adding-images-to-an-html-document-with-javascript
+https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-different-height-and-width-the-same-via-css
+
+Images:
+https://walkertongcc.com/wp-content/uploads/2017/06/hp1-steak11.png
+https://www.seafoodwatch.org/-/m/sfw/images/recommendations/fish/salmon/chinook-salmon.png?mw=500&mh=300&bc=ffffff
+https://lh3.googleusercontent.com/proxy/_j6LqRPEsrbYW75-1AwO2WwmFdTBj-2EqOXFC1VivdDJybvoibAFv6zfrv7g8H1mjnSjMSSF1BuNsbc5qT1IgAenxKvh__UYwn-SKgPS4WVV98WgcQFtCo8
+https://thebagelfactory.ca/images/TBF_bagels.png
+https://www.lgssales.com/wp-content/uploads/2017/07/darling-oranges-1.png
+https://www.cobsbread.com/drive/uploads/2018/01/cobs-product-sourdough-vienna-1280x720.png
+https://lh3.googleusercontent.com/proxy/poDyFY-lt69Cg6MEAgLd-cP7yxN1Adb9dFGn584QKnVY6NF_H9Z3DuqTuiRPSosRhI6RbCBoq_asyTA4Mbj1QoR05rM2Q0eI4MWpnii8D_B6XRf69gjt9KSb5FbnNfIRb-pm16C3WZ30g2pvQ1cTIs1ei9bUKJIrCiv1KUUJSg
+https://lh3.googleusercontent.com/proxy/8CIIWrjPsQFtm08Oe5vzjdPy4PAxRD4byt9mGY-GxWD2lLQBQofsGmviUgIjDixnlFgH2V6ndas9pvTTm6zzZAGKvhCjl-kbLgVS_GKzU-ArRAuaslm-_YS85hCzPIgfxjL1H5t0WrIHyvDb7aJ4UCsj
+https://www.weaverstreetmarket.coop/wp-content/uploads/2015/06/blueberry-muffin-public-domain-pixabay-drybrushed.png
+https://i.pinimg.com/originals/03/52/63/03526336ef23211c5a4c91db0ff12d17.png

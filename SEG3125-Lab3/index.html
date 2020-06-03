@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<script src="scripts/groceries.js"></script>
+	<script src="scripts/main.js"></script>
+	<title>Groceries For All</title>
+</head>
+<body>
+
+<!-- <div class="topbar">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+ -->
+<div class="mainContent">
+
+	<div class="sidebar">
+		<div class="half-containers">
+	      <div id="Client" class="tabcontent">
+				  <h3>Filter options</h3>
+				  <p>Click the options below to filter items.</p>
+
+					<div>
+				    <input type="checkbox" class="restrictions" value="Vegetarian" onclick="(populateListProductChoices('displayProduct'))">
+				    <label >Vegetarian</label>
+				  </div>
+				  <div>
+				    <input type="checkbox"  class="restrictions" value="GlutenFree" onclick="(populateListProductChoices('displayProduct'))">
+				    <label>GlutenFree</label>
+				  </div>
+				  <div>
+				    <input type="checkbox"  class="restrictions" value="Organic" onclick="(populateListProductChoices('displayProduct'))">
+				    <label>Organic</label>
+				  </div>
+				  <br>
+
+				</div>
+	  </div>
+	   
+	  <hr style="width: 100%;">
+	  
+	  <div class="half-containers">
+			<div id="Cart" class="tabcontent">
+			  <h3>Cart</h3>
+			  <p>These are the items currently in your cart:</p>
+			  <div id="displayCart"></div>
+			</div>
+	  </div>
+	</div>
+
+
+	<div>
+		<h3 style="text-align: center">Groceries For All</h3>
+	</div>
+	<hr>
+
+<div class="tab">
+  <button class="tablinks" onclick="(populateListProductChoices('displayProduct','vegetable' ))" >Vegetables</button>
+  <button class="tablinks" onclick="(populateListProductChoices('displayProduct', 'fruit'))">Fruits</button>
+  <button class="tablinks" onclick="(populateListProductChoices('displayProduct', 'meat'))">Meat</button>
+</div>
+
+	<div id="Products" class="tabcontent">
+	  <h3>Products</h3>
+	  <p>Here are the availabe items to buy based on the filters</p>
+		 <div id= "displayProduct" class="grid-container">
+		 </div>
+		<script>populateListProductChoices('displayProduct');</script>
+	</div>	
+ 	
+</div>
+
+	<footer>
+   <p>Website designed by Aman<br>
+</footer>
+
+
+</body>
+
+
+</html>

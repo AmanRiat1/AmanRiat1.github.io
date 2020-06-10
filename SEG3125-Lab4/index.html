@@ -1,0 +1,208 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>The Bike Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-white navbar-white sticky-top">
+    <img src="images/bicycle.png" class="logo">
+    <a class="top_name"> Riat's Bicycle Shop</a>
+    <div class="location_div">
+      <b>Location:</b>
+      <br>
+      <a>75 Laurier Ave E</a>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid bg-dark text-white">
+    <br>
+    <br>
+    <h1 class="display-4"> Riat's Biycycle Repair Shop</h1>
+    <br>
+    <a>We have a whole team of professionals</a>
+    <br>
+    <br>
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <div class="card-deck">
+        <div class="card bg-success">
+          <img class="card-img-top" src="images/img_avatar1.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">John's been fixing bicycles for 50 years. He's a bicycle enthusiast
+            and loves to help anyone with their bicycles.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+        <div class="card bg-success">
+          <img class="card-img-top" src="images/biketworepair.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Mike Smith</h4>
+            <p class="card-text">Mike's been with us for a year but has knowledge beyond his years
+            when it comes to repairing bicycles.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+        <div class="card bg-success">
+          <img class="card-img-top" src="images/clerk.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Aman Riat</h4>
+            <p class="card-text">Aman doesn't know much but he'll make sure to help your appointments
+            go as smoothly as possible.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+  </div>
+
+<div class="container-fluid">
+  <br>
+  <br>
+  <br>
+  <!-- https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp -->
+  <div class="row">
+    <div class="col-sm-6 spacing">
+      <h2>Bicycle Repair</h2>
+      <br>
+      <!-- https://www.w3schools.com/bootstrap4/bootstrap_images.asp -->
+      <p class="text-5-xs text-color-light">
+        Break a part and need some help?
+        Come in and get your bicycle repaired. Prices start from $100 and can vary depending
+        on the work needed to be done.
+      </p>
+      <img class=" img-thumbnail rounded" src=images/repair.jpg>
+    </div>
+    <div class="col-sm-6 spacing">
+      <h2>Bicyle Tune Up</h2>
+      <br>
+      <p class="text-5-xs text-color-light">
+        Having some problems with the performance of your bicycle? Or want to refresh your bicycle. Come in and get your bicycle evaluated and fixed up for as low as $30. 
+      </p>  
+      <img class=" img-thumbnail rounded" src=images/repair.jpg>
+    </div>
+  </div>
+</div>
+<hr>
+
+ <div class="container">
+    <h1 class="display-4">Choose a Service</h1>
+    <br>
+        <div id="accordion">
+            <div class="card">
+              <!-- https://stackoverflow.com/questions/23949804/how-to-change-link-color-bootstrap -->
+                <div class="card-header bg-dark">
+                    <a class="text-white" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                  <!--https://www.w3schools.com/bootstrap4/bootstrap_forms_inputs.asp -->
+                  <!-- https://www.w3schools.com/bootstrap4/bootstrap_icons.asp -->
+                    <div class="card-body">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Brake (Repair)
+                          </label>
+                          <img class ="icon"src="images/brake.png">
+                        </div>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Chain (Repair)
+                          </label>
+                          <i class="fa fa-chain-broken" style="font-size:36px;"></i>
+                        </div>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Tire Replacement (Tune Up)
+                          </label>
+                          <img class ="icon"src="images/tireIcon.png">
+                        </div>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Color Enhancement (Tune Up)
+                          </label>
+                          <i class="fas fa-paint-brush" style="font-size:36px"></i>
+                        </div>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Other
+                          </label>
+                        </div>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header bg-dark">
+                    <a class="text-white" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>What date?</p>
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+            <div class="card">
+                <div class="card-header bg-dark">
+                    <a class="text-white" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <!-- https://www.w3schools.com/bootstrap4/bootstrap_forms.asp -->
+                      <h2>Enter your Info</h2>
+                      <form >
+                        <div class="form-group">
+                          <label for="name">Name:</label>
+                          <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Phone:</label>
+                          <input type="Phone" class="form-control" id="pwd" placeholder="Enter phone" name="pswd">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+  
+
+
+</body>
+</html>

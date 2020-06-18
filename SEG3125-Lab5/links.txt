@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/34346983/jquery-hover-event-for-input-textbox-is-not-working/34347028
+https://www.regextester.com/94189
+https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp
+https://stackoverflow.com/questions/2834350/get-checkbox-value-in-jquery
+https://jqueryui.com/themeroller/

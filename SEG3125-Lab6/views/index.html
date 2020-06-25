@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>UI Evaluation</title>
+      <meta charset="UTF-8"/>
+      <link href="assets/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>      
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="form_card">
+         <div class="form_container">
+            <h1 class="display-4">Survey</h1>
+            <hr class="hr-style">
+            <form>
+               <br>
+               <h3 > Visit the <a href="https://apple.com/ca/">Apple</a> website and fill out your thoughts below.</h3>
+               <a href="https://apple.com/ca/">
+               <img src="assets/apple.png" alt="https://apple.com/ca/" width="550" height="300">
+               </a>
+               <br>
+               <br>
+               <hr class="hr-style">
+               <div class="outer_question">
+                  <h3>How would you say the content on the screen is organized?</h3>
+                  <div>	
+                     <input type="radio" id="organized" name="organization" value="organized">
+                     <label for="male">Organized really well</label><br>
+                     <input type="radio" id="alright" name="organization" value="alright">
+                     <label for="female">A bit confusing but usuable</label><br>
+                     <input type="radio" id="confusing" name="organization" value="confusing">
+                     <label for="other"> Super confusing</label>
+                  </div>
+               </div>
+               <hr class="hr-style">
+               <br>
+               <div class="outer_question">
+                  <h3>What was your impression on the support page layout?</h3>
+                  <div>
+                     <select name="impression">
+                        <option value="Great">Great</option>
+                        <option value="Good">Good</option>
+                        <option value="Could be better">Could be better</option>
+                        <option value="Terrible">Terrible</option>
+                     </select>
+                  </div>
+               </div>
+               <br>
+               <hr class="hr-style">
+               <div class="outer_question">
+                  <h3>What was the best/worst thing about the sign in page</h3>
+                  <div>
+                     <input type="text" name="bestWorst" placeholder="impression..." required />
+                  </div>
+               </div>
+               <br>
+               <hr class="hr-style">
+               <div class="outer_question">
+                  <h3>How would you change the iPhone page?</h3>
+                  <div>
+                     <input type="checkbox" name ="phonePage" value="larger icons" > Add larger Icons<br>
+                     <input type="checkbox" name ="phonePage" value="light colour" > Change the background to a lighter colour<br>
+                     <input type="checkbox"  name ="phonePage"value="phone info to top"> Add information of phones to top of page <br>
+                     <input type="checkbox"  name ="phonePage"value="reduce info bottom"> Reduce information towards bottom of page  <br>
+                     <input type="checkbox"  name ="phonePage" value="fine"> It's fine as is
+                  </div>
+               </div>
+               <br>
+               <hr class="hr-style">
+               <div class="outer_question">
+                  <h3>Select one of the options for each of the questions below</h3>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Question</th>
+                        <th scope="col">Strongly Disagree</th>
+                        <th scope="col">Disagree</th>
+                        <th scope="col">Neutral</th>
+                        <th scope="col">Agree</th>
+                        <th scope="col">Strongly Agree</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="table-col">The colours are visually appeasing</td>
+                           <td><input type="radio" value="Strongly Disagree" name="colour" required/></td>
+                           <td><input type="radio" value="Disagree" name="colour" required/></td>
+                           <td><input type="radio" value="Neutral" name="colour" required/></td>
+                           <td><input type="radio" value="Agree" name="colour" required/></td>
+                           <td><input type="radio" value="Strongly Agree" name="colour" required/></td>
+                      </tr>
+                      <tr>
+                        <td class="table-col">It is fairly easy to sign in</td>
+                           <td><input type="radio" value="Strongly Disagree" name="signin" required/></td>
+                           <td><input type="radio" value="Disagree" name="signin" required/></td>
+                           <td><input type="radio" value="Neutral" name="signin" required/></td>
+                           <td><input type="radio" value="Agree" name="signin" required/></td>
+                           <td><input type="radio" value="Strongly Agree" name="signin" required/></td>
+                      </tr>
+                      <tr>
+                        <td class="table-col">There were no issues searching for support on an item</td>
+                           <td><input type="radio" value="Strongly Disagree" name="support" required/></td>
+                           <td><input type="radio" value="Disagree" name="support" required/></td>
+                           <td><input type="radio" value="Neutral" name="support" required/></td>
+                           <td><input type="radio" value="Agree" name="support" required/></td>
+                           <td><input type="radio" value="Strongly Agree" name="support" required/></td>
+                      </tr>
+                    </tbody>
+                  </table>
+               </div>
+               <br>
+               <hr class="hr-style">
+               <div class="outer_question">
+                  <h3>Additional Comments?</h3>
+                  <div>
+                     <input type="text" name="additional" placeholder="Comments..." required />
+                  </div>
+               </div>
+               <hr class="hr-style">
+               <br>
+               <br>
+               <button type="submit" class="btn btn-primary btn-lg" id="bb">Submit</button>
+                <p id="thanks"></p>
+               <br>
+               <br>
+            </form>
+         </div>
+      </div>
+      <br>
+      <br>
+      <footer>
+         <p>Website designed by Aman<br>
+      </footer>
+             <script src="/assets/action.js"></script>
+   </body>
+</html>

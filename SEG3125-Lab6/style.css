@@ -1,0 +1,80 @@
+h3{
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 20px;
+}
+textarea {
+	 width: 70%;
+}
+
+body{
+	background: linear-gradient(#2BC0E4, #EAECC6) fixed;
+}
+table{
+	width: 100%;
+}
+
+form{
+	width: 100%;
+}
+td{
+	text-align: center;
+}
+
+footer{
+  
+   background-color: black;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+   position: fixed;
+}
+
+.submit_button{
+	background-color: white;
+	color: white;
+	padding: 10px 50px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	color: black; 
+	border: 2px solid black;
+
+}
+
+.form_card {
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
+  border-radius: 10px;
+  align-items: center;
+  width: 50%;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.form_container {
+	text-align: center;
+	justify-content: center;
+  	padding: 2px 16px;
+}
+
+.outer_question{
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.table-col{
+	width: 50%;
+	text-align: left;
+}
+
+/*https://codepen.io/ibrahimjabbari/pen/ozinB*/
+.hr-style {
+	border-top: 1px solid;
+	color: #8c8b8b;
+}
+

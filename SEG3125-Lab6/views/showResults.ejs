@@ -1,0 +1,61 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Survey analysis</h1>
+    <h2>Impression of the content organization</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].organization %> :  <%= results[4][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Impression of the layout for the support page</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].impression %> :  <%= results[3][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Best and Worst thing about Sign in Page</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].bestWorst %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>How to change the iPhone page</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].phonePage %> :  <%= results[5][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Colour are visually appeasing</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].colour %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>It's easy to signin</h2>
+    <ul>
+    <% for (var i=0; i<results[6].length; i++){ %>
+        <li><%= results[6][i].signin %> :  <%= results[6][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Easy to search for support on item</h2>
+    <ul>
+    <% for (var i=0; i<results[7].length; i++){ %>
+        <li><%= results[7][i].support %> :  <%= results[7][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Additional Info</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].additional %> :  <%= results[0][i].count %></li>
+    <% } %>    
+    </ul>
+
+
+
+
+</body>
+</html>

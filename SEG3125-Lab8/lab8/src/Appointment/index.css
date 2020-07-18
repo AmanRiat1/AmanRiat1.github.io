@@ -1,0 +1,23 @@
+.row{
+    padding-top: 10px;
+}
+
+.radioAlignLeft{
+    text-align: left;
+}
+.date{
+    color: red;
+}
+
+.react-datepicker__input-container {
+    width: inherit;
+  }
+  
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+
+.photo {
+height: 200px;
+width: 200px;
+}

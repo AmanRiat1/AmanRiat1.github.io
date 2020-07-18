@@ -1,17 +1,16 @@
 import React, {Component} from 'react'
-import "./index.css";
 
-class Home extends Component{
+class About extends Component{
     state ={
         content: ''
     }
     render(){
         return(
             <div>
-                <p>Welcome to Spike's Computer Repair Shop</p>
+                <p>A simple page detailing what the company is about</p>
             </div>
         )
     }
 }
 
-export default Home;
+export default About;

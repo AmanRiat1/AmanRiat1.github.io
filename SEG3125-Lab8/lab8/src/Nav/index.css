@@ -24,3 +24,7 @@ a{
     color: black;
     text-decoration: none;
 }
+
+.langSelect{
+    padding-left: 40px;
+}

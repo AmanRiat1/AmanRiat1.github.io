@@ -1,16 +1,17 @@
 import React, {Component} from 'react'
 
-class About extends Component{
-    state ={
-        content: ''
-    }
-    render(){
+const aboutText = {
+    text: ["A simple page detailing what the company is about", "Una página simple que detalla de qué se trata la compañía"],
+}
+
+function About(props){
+        const language = props.language === 'en' ? 0 : 1;
         return(
             <div>
-                <p>A simple page detailing what the company is about</p>
+                <p>{aboutText.text[language]}</p>
             </div>
         )
     }
-}
+
 
 export default About;

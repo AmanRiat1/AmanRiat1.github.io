@@ -11,6 +11,36 @@ import hdd from './hdd.jpg';
 import buildpc from './buildpc.jpg';
 import os from './os.jpg';
 
+const appointmentText = {
+  repair: ["Repair", "Reparar"],
+  tutorial: ["Tutorial", "Tutorial"],
+  
+  moboRepair: ["Motherboard Repair", "Reparación de la placa base"],
+  moboRepairText: ["Got a broken mobo preventing you from scrolling through Twitter all day? We can fix that so you can tweet!",
+                    "¿Tienes un mobo roto que te impide desplazarte por Twitter todo el día? ¡Podemos arreglar eso para que puedas tuitear!"],
+  
+  hddRepair: ["Harddrive Repair", "Reparación de disco duro"],
+  hddRepairText : ["Busted your hard drive and need that precious data back? We can help you recover that lost data!", 
+                    "¿Rompió su disco duro y necesita recuperar esos preciosos datos? ¡Podemos ayudarlo a recuperar esos datos perdidos!"],
+
+  pcTut : ["Build a PC Tutorial", "Crear un tutorial de PC"],
+  pcTutText : ["Come in and get a class on how to build a PC. Bring your own parts in or practice with ours!",
+                "Entra y obtén una clase sobre cómo construir una PC. ¡Trae tus propias partes o practica con las nuestras!"],
+ 
+  osTut : ["Install an OS Tutorial", "Instalar un tutorial del sistema operativo"],
+  osTutText : [" Built your PC but need to learn what to do after? We take you through the crucial steps after you build a pc.",
+                "¿Construye tu PC pero necesitas aprender qué hacer después? Te guiamos a través de los pasos cruciales después de construir una PC."],
+  
+  alertOne : ["The service you have booked is ","El servicio que ha reservado es"],
+  alertTwo : ["and the date is for", "y la fecha es para"],
+  formTitle : ["Book an Appointment", "Reservar una cita"],
+  formName : ["Name", "Nombre"],
+  formPhone : ["Phone", "Teléfono"],
+  formDate : ["Date", "Fecha"],
+  submit : ["Submit", "Enviar"]
+
+}
+
 
 class Appointment extends Component{
     state ={
@@ -18,6 +48,8 @@ class Appointment extends Component{
         startDate: new Date(),
         serviceType: ''
     }
+
+   
 
     isWeekday = date => {
       const day = getDay(date);
@@ -63,18 +95,27 @@ class Appointment extends Component{
         
       }
 
+      selectedLanguage = () =>{
+       if (this.props.language === 'en') 
+        return 0;
+       else {
+        return 1;
+       }
+        
+      }
+
       text = (value) =>{
           let msg;
+          let language = this.props.language === 'en' ? 0 : 1;
           if (value){
             msg =  <div className="row">
             <div className="col-sm-6" >
                 <Card >
                   <Card.Img variant="top" className="photo" src={mobo} thumbnail  />
                   <Card.Body>
-                    <Card.Title>Motherboard Repair</Card.Title>
+                    <Card.Title>{appointmentText.moboRepair[language]}</Card.Title>
                     <Card.Text>
-                      Got a broken mobo preventing you from scrolling through Twitter all day?
-                      We can fix that so you can tweet!
+                      {appointmentText.moboRepairText[language]}
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -83,10 +124,9 @@ class Appointment extends Component{
                 <Card >
                   <Card.Img variant="top" className="photo" src={hdd} thumbnail />
                   <Card.Body>
-                    <Card.Title>Harddrive Repair</Card.Title>
+                    <Card.Title>{appointmentText.hddRepair[language]}</Card.Title>
                     <Card.Text>
-                      Busted your hard drive and need that precious data back? We can help you 
-                      recover that lost data!
+                      {appointmentText.hddRepairText[language]}
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -98,10 +138,9 @@ class Appointment extends Component{
                 <Card >
                   <Card.Img variant="top" className="photo" src={buildpc} thumbnail  />
                   <Card.Body>
-                    <Card.Title>Build a PC Tutorial</Card.Title>
+                    <Card.Title>{appointmentText.pcTut[language]}</Card.Title>
                     <Card.Text>
-                      Come in and get a class on how to build a PC. Bring your own parts in 
-                      or practice with ours!
+                    {appointmentText.pcTutText[language]}
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -110,10 +149,9 @@ class Appointment extends Component{
                 <Card >
                   <Card.Img variant="top" className="photo" src={os} thumbnail />
                   <Card.Body>
-                    <Card.Title>Install an OS Tutorial</Card.Title>
+                    <Card.Title>{appointmentText.osTut[language]}</Card.Title>
                     <Card.Text>
-                      Built your PC but need to learn what to do after? We take you through 
-                      the crucial steps after you build a pc.
+                    {appointmentText.osTutText[language]}
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -125,7 +163,8 @@ class Appointment extends Component{
           )
       }
     
-    render(){
+    render(){        
+      const language = this.props.language === 'en' ? 0 : 1;
         return(
             <div>
             <div className="row">
@@ -141,7 +180,7 @@ class Appointment extends Component{
                              e.currentTarget.value)}
                         block     
                         >
-                        Repair
+                        {appointmentText.repair[language]}
                     </ToggleButton>
                 </ButtonGroup>
                 </div>
@@ -156,7 +195,7 @@ class Appointment extends Component{
                         onChange={(e) => this.setChecked(
                             e.currentTarget.value)}
                         >
-                        Tutorial
+                        {appointmentText.tutorial[language]}
                     </ToggleButton>
                 </ButtonGroup>
                 </div>
@@ -169,14 +208,14 @@ class Appointment extends Component{
 
                 <Card >
                     <Card.Body> 
-                    <Card.Title>Book an Appointment</Card.Title>
+                    <Card.Title>{appointmentText.formTitle[language]}</Card.Title>
                     <Form onSubmit={this.sendConfirmation}>
                       <Form.Group as={Row} controlId="formName">
                         <Form.Label column sm={2}>
-                          Name
+                        {appointmentText.formName[language]}
                         </Form.Label>
                         <Col sm={10}>
-                          <Form.Control type="name" placeholder="Name" />
+                          <Form.Control type="name" placeholder={appointmentText.formName[language]} />
                         </Col>
                       </Form.Group>
 
@@ -198,14 +237,14 @@ class Appointment extends Component{
                             <div class="radioAlignLeft">
                             <Form.Check
                               type="radio"
-                              label= {this.state.repair ? "Motherboard Repair" : "Build a PC Tutorial"}
+                              label= {this.state.repair ? appointmentText.moboRepair[language]: appointmentText.pcTut[language]}
                               name="formHorizontalRadios"
                               id="formHorizontalRadios1"
                               onChange={this.handleServiceType}
                             />
                             <Form.Check
                               type="radio"
-                              label={this.state.repair ? "Harddrive Repair" : "Install an OS Tutorial"}
+                              label={this.state.repair ? appointmentText.hddRepair[language]: appointmentText.osTut[language]}
                               name="formHorizontalRadios"
                               id="formHorizontalRadios2"
                               onChange={this.handleServiceType}
@@ -217,16 +256,16 @@ class Appointment extends Component{
 
                       <Form.Group as={Row} controlId="formPhone">
                         <Form.Label column sm={2}>
-                          Phone
+                        {appointmentText.formPhone[language]}
                         </Form.Label>
                         <Col sm={10}>
-                          <Form.Control type="phone" placeholder="Phone" />
+                          <Form.Control type="phone" placeholder={appointmentText.formPhone[language]}/>
                         </Col>
                       </Form.Group>
 
                       <Form.Group as={Row} controlId="formDate">
                         <Form.Label column sm={2}>
-                          Date
+                        {appointmentText.formDate[language]}
                         </Form.Label>
                         <Col sm={10}>
                         <div className="date">  
@@ -246,7 +285,7 @@ class Appointment extends Component{
 
                       <Form.Group as={Row}>
                         <Col sm={{ span: 10, offset: 2 }}>
-                          <Button type="submit">Submit</Button>
+                          <Button type="submit">{appointmentText.submit[language]}</Button>
                         </Col>
                       </Form.Group>
                     </Form>
